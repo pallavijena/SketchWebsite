@@ -1,65 +1,70 @@
-package TestcaseImpt
+package PageObjects
 
-
+import Setup.Constants
 import Setup.DriverCreation
+import org.junit.After
+import org.junit.Before
+import org.junit.Test
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
-import org.openqa.selenium.chrome.ChromeDriver
-import org.openqa.selenium.chrome.ChromeOptions
 
 /**
  * Created by Pallavi on 9/28/2016.
  */
 class UploadImage {
-    public static void main( String[] args)
+    WebDriver driver
+    @Before
+    public void driverCreation()
     {
-        WebDriver driver
         driver= DriverCreation.getChromeDriver()
-        driver.get("https://sketch.io/sketchpad/")
+        driver.get(Constants.url)
         driver.manage().window().maximize()
         Thread.sleep(3000)
-//Select Clipart
-        WebElement clipart = driver.findElement(By.xpath("/html/body/div[2]/div[1]/div[2]/span[4]")).click()
+    }
+    @Test
+    public void uploadImage()
+    {
+        //Select Clipart tab
+        WebElement clipart = driver.findElement(By.xpath(Constants.clipart_cliparticon_xpath)).click()
         Thread.sleep(6000)
-//Upload image in clipart
-        WebElement loadImage = driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/span/input"))
+        //Upload image in clipart
+        WebElement loadImage = driver.findElement(By.xpath(Constants.clipart_loadyourownimage_xpath))
         Thread.sleep(1000)
         loadImage.sendKeys("C:/Users/Pallavi/Downloads/Tree.jpg")
-        Thread.sleep(6000)
-        UploadImage image1=new UploadImage()
-        image1.changeSettings("Opacity",40,driver)
-        image1.changeSettings("Saturation",45,driver)
-        image1.changeSettings("tint",50,driver)
-        image1.changeSettings("Temperature",55,driver)
-        image1.changeSettings("Contrast",0.60,driver)
-        image1.changeSettings("Brightness",65,driver)
-        image1.changeSettings("Exposure",0.75,driver)
-        image1.changeSettings("Sepia",20,driver)
         Thread.sleep(2000)
-        image1.saveFile(driver)
-        driver.close()
+        //UploadImage image1=new UploadImage()
+        changeSettings("Opacity",40)
+        changeSettings("Saturation",45)
+        changeSettings("tint",50)
+        changeSettings("Temperature",55)
+        changeSettings("Contrast",0.60)
+        changeSettings("Brightness",65)
+        changeSettings("Exposure",0.75)
+        changeSettings("Sepia",20)
+        Thread.sleep(2000)
+        saveFile()
     }
 
-    public void changeSettings (String settingType,float value, WebDriver driver)
+    public void changeSettings (String settingType,float value)
     {
-        WebElement opacitySlider= driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[2]/div/div"))
-        WebElement opacityValue= driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[2]/span[2]/input"))
-        WebElement saturationValue=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[2]/span[2]/input"))
-        WebElement saturationSlider=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[2]/div/div"))
-        WebElement tintValue=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[4]/span[2]/input"))
-        WebElement tintSlider=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[4]/div/div"))
-        WebElement temperatureValue=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[6]/span[2]/input"))
-        WebElement temperatureSlider=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[6]/div/div"))
-        WebElement contrastValue=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[8]/span[2]/input"))
-        WebElement contrastSlider=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[8]/div/div"))
-        WebElement brightnessValue=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[10]/span[2]/input"))
-        WebElement brightnessSlider=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[10]/div/div"))
-        WebElement exposureValue=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[12]/span[2]/input"))
-        WebElement exposureSlider=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[12]/div/div"))
-        WebElement sepiaValue=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[14]/span[2]/input"))
-        WebElement sepiaSlider=driver.findElement(By.xpath("//*[@id=\"sk-configure\"]/div[2]/div[3]/div/div[2]/div[14]/div/div"))
+        WebElement opacitySlider= driver.findElement(By.xpath(Constants.clipart_opacitySlider_xpath))
+        WebElement opacityValue= driver.findElement(By.xpath(Constants.clipart_opacityValue_xpath))
+        WebElement saturationValue=driver.findElement(By.xpath(Constants.clipart_saturationValue_xpath))
+        WebElement saturationSlider=driver.findElement(By.xpath(Constants.clipart_saturationSlider_xpath))
+        WebElement tintValue=driver.findElement(By.xpath(Constants.clipart_tintValue_xpath))
+        WebElement tintSlider=driver.findElement(By.xpath(Constants.clipart_tintSlider_xpath))
+        WebElement temperatureValue=driver.findElement(By.xpath(Constants.clipart_temperatureValue_xpath))
+        WebElement temperatureSlider=driver.findElement(By.xpath(Constants.clipart_temperatureSlider_xpath))
+        WebElement contrastValue=driver.findElement(By.xpath(Constants.clipart_contrastValue_xpath))
+        WebElement contrastSlider=driver.findElement(By.xpath(Constants.clipart_contrastSlider_xpath))
+        WebElement brightnessValue=driver.findElement(By.xpath(Constants.clipart_brightnessValue_xpath))
+        WebElement brightnessSlider=driver.findElement(By.xpath(Constants.clipart_brightnessSlider_xpath))
+        WebElement exposureValue=driver.findElement(By.xpath(Constants.clipart_exposureValue_xpath))
+        WebElement exposureSlider=driver.findElement(By.xpath(Constants.clipart_exposureSlider_xpath))
+        WebElement sepiaValue=driver.findElement(By.xpath(Constants.clipart_sepiaValue_xpath))
+        WebElement sepiaSlider=driver.findElement(By.xpath(Constants.clipart_sepiaSlider_xpath))
         switch (settingType)
         {
             case "Opacity":
@@ -138,20 +143,26 @@ class UploadImage {
 
     }
 
-    public void saveFile(WebDriver driver)
+    public void saveFile()
     {
-        driver.findElement(By.xpath("html/body/div[2]/div[1]/div[1]/span[3]")).click()
+        driver.findElement(By.xpath(Constants.home_export_xpath)).click()
         Thread.sleep(10000)
         List<WebElement> ele=driver.findElements(By.xpath("//*"))
         for (WebElement temp:ele)
         {
             if(temp.getText().contains("PDF")&&temp.getTagName().equals("li"))
             {
-                println "Element->"+temp.getText()+":"+temp.getTagName()+":"+temp.getProperties()
                 temp.click()
                 Thread.sleep(5000)
                 break
             }
         }
     }
+
+    @After
+    public void exit()
+    {
+        driver.close()
+    }
+
 }
