@@ -12,13 +12,13 @@ import org.openqa.selenium.firefox.FirefoxDriver
 class DriverCreation {
     public static WebDriver getChromeDriver()
     {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Pallavi\\Downloads\\chromedriver_win32\\chromedriver.exe")
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\RajaA\\Downloads\\chromedriver_win32\\chromedriver.exe")
         WebDriver driver=new ChromeDriver(ConfigureCapabilities.getChromeOptions())
         return driver
     }
     public static WebDriver getEdgeDriver()
     {
-        System.setProperty("webdriver.edge.driver", "C:\\Program Files\\Microsoft Web Driver\\MicrosoftWebDriver.exe");
+       // System.setProperty("webdriver.edge.driver", "C:\\Program Files\\Microsoft Web Driver\\MicrosoftWebDriver.exe");
         WebDriver driver=new EdgeDriver()
         return driver
     }
