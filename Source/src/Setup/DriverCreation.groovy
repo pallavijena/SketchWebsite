@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.edge.EdgeDriver
 import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.remote.DesiredCapabilities
 
 /**
  * Created by Pallavi on 9/28/2016.
@@ -12,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver
 class DriverCreation {
     public static WebDriver getChromeDriver()
     {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Pallavi\\Downloads\\chromedriver_win32\\chromedriver.exe")
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Pallavi\\IdeaProjects\\Browser Setups\\chromedriver_win32\\chromedriver.exe")
         WebDriver driver=new ChromeDriver(ConfigureCapabilities.getChromeOptions())
         return driver
     }
@@ -24,7 +25,10 @@ class DriverCreation {
     }
     public static WebDriver getFireFoxDriver()
     {
-        WebDriver driver=new FirefoxDriver()
+        /*System.setProperty("marionette","C:\\Users\\Pallavi\\IdeaProjects\\Browser Setups\\Firefox_driver\\wires.exe")
+        DesiredCapabilities capabilities = DesiredCapabilities.firefox()
+        capabilities.setCapability("marionette", true)
+        WebDriver driver = new FirefoxDriver(capabilities)*/
         return driver
     }
 }

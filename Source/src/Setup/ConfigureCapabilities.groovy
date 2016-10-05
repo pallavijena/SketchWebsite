@@ -1,6 +1,7 @@
 package Setup
 
 import org.openqa.selenium.chrome.ChromeOptions
+import org.openqa.selenium.remote.DesiredCapabilities
 
 /**
  * Created by Pallavi on 9/28/2016.
