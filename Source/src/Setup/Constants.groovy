@@ -5,10 +5,36 @@ package Setup
  */
 class Constants {
     /*
-      Elements are represented in the format : TAB NAME_ELEMENT NAME_ELEMENT IDENTIFIER
+      Elements are represented in the format : SCREEN NAME_ELEMENT NAME_ELEMENT IDENTIFIER
      */
+
     // Website URL
-    public static String url = "https://sketch.io/sketchpad/"
+    public static String url = "https://sketch.io"
+
+    //Home screen Variables
+    public static String home_sketchpad_xpath = "//*[@id=\"apps\"]/div/a[1]/img"
+    public static String home_webcam_xpath = "//*[@id=\"apps\"]/div/a[2]/img"
+    public static String home_about_linktext = "ABOUT"
+    public static String home_contact_linktext = "CONTACT"
+
+    // Sketchpad screen variables
+    public static String sketchpad_tool_xpath="/html/body/div[2]/div[2]/span/span[1]"
+    public static String sketchpad_select_linktext="SELECT"
+    public static String sketchpad_pen_xpath="//*[@id=\"sk-configure\"]/div[1]"
+
+    //Webcam Screen Variables
+    public static String webcam_title_xpath="//*[@id=\"alertify\"]/div/article/span/div/h1/span"
+
+    //About Page variables
+    public static String about_sketchio_linktext = "Sketch.IO"
+    public static String about_sketchapi_linktext = "SketchAPI"
+    public static String about_sketchpad_linktext = "Sketchpad"
+    public static String about_sketchioText_xpath = "//*[@id=\"content_wrapper\"]/div/p[1]"
+
+    //Contact Page variables
+
+
+
     // Tab Names
     public static String clipart_cliparticon_xpath = "/html/body/div[2]/div[1]/div[2]/span[4]"
     // Clipart Tab
