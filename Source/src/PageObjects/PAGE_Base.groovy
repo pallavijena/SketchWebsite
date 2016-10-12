@@ -14,25 +14,24 @@ import org.openqa.selenium.WebDriver
 import java.util.concurrent.TimeUnit
 
 /**
- * Created by Pallavi on 10/6/2016.
+ * Created by Rocky on 8/14/2016.
  */
-class PAGE_Base {
+class PAGE_BASE{
     WebDriver driver=null
     @Rule
     public TestName testName=new TestName()
     @Before
-    public void browserSetup()
+    public void driverCreation()
     {
-        driver= DriverCreation.getChromeDriver()
+        driver=DriverCreation.getChromeDriver()
         driver.get(Constants.url)
+        driver.manage().timeouts().pageLoadTimeout(2,TimeUnit.MINUTES)
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS)
         driver.manage().window().maximize()
-        driver.manage().timeouts().implicitlyWait(2,TimeUnit.MINUTES)
-        driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS)
-        Thread.sleep(2000)
     }
 
     @After
-    public void browserClose()
+    public void exit()
     {
         File screenShot= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(screenShot,new File("ScreenShot\\"+testName.getMethodName()+".jpg"))

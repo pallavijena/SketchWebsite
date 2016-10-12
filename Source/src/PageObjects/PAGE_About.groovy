@@ -4,15 +4,18 @@ import Setup.Constants
 import org.junit.Test
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
+import org.testng.annotations.Test
 
 /**
  * Created by Pallavi on 10/5/2016.
  */
-class PAGE_About extends PAGE_Base {
+
+class PAGE_About extends PAGE_BASE {
     WebDriver driver
 
     @Test
     public void clickSketchIo( WebDriver driver)
+
     {
         driver.findElement(By.linkText(Constants.about_sketchio_linktext)).click()
     }

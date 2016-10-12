@@ -19,11 +19,13 @@ import java.util.concurrent.TimeUnit
 /**
  * Created by Pallavi on 10/3/2016.
  */
-class PAGE_Home extends PAGE_Base{
+
+class PAGE_Home extends PAGE_BASE{
 
     WebDriver driver
     @Test
     public void gotoSketchpad(WebDriver driver)
+
     {
         driver.findElement(By.xpath(Constants.home_sketchpad_xpath)).click()
         Thread.sleep(3000)
