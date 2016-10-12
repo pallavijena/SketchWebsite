@@ -6,45 +6,18 @@ import org.apache.commons.io.FileUtils
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
-import org.junit.Test
 import org.junit.rules.TestName
-import org.openqa.selenium.By
 import org.openqa.selenium.OutputType
 import org.openqa.selenium.TakesScreenshot
 import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
 
 import java.util.concurrent.TimeUnit
 
 /**
- * Created by Pallavi on 10/3/2016.
+ * Created by Pallavi on 10/6/2016.
  */
-class PAGE_Home extends PAGE_Base{
-
-    WebDriver driver
-    @Test
-    public void gotoSketchpad(WebDriver driver)
-    {
-        driver.findElement(By.xpath(Constants.home_sketchpad_xpath)).click()
-        Thread.sleep(3000)
-    }
-
-    public void gotoWebcam()
-    {
-        driver.findElement(By.xpath(Constants.home_webcam_xpath)).click()
-        Thread.sleep(3000)}
-
-    public void clickAbout(WebDriver driver)
-    {
-        driver.findElement(By.linkText(Constants.home_about_linktext)).click()
-        Thread.sleep(3000)
-    }
-    public void clickContact()
-    {
-        driver.findElement(By.linkText(Constants.home_contact_linktext)).click()
-        Thread.sleep(3000)
-    }
-
+class PAGE_Base {
+    WebDriver driver=null
     @Rule
     public TestName testName=new TestName()
     @Before
@@ -65,5 +38,4 @@ class PAGE_Home extends PAGE_Base{
         FileUtils.copyFile(screenShot,new File("ScreenShot\\"+testName.getMethodName()+".jpg"))
         driver.close()
     }
-
 }

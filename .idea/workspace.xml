@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872b29d5-fd7f-4bbd-ae15-149891b0f3bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/SketchWebsite/PageObjects/PAGE_Home.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/SketchWebsite/TestCaseImplementation/VerifySketchpadPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/SketchWebsite/TestCaseImplementation/VerifyWebcamPage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/src/PageObjects/PAGE_About.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/src/PageObjects/PAGE_Home.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchIoInAbout.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchpadPage.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifyWebcamPage.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SketchWebsite/Setup/Constants.class" afterPath="$PROJECT_DIR$/out/production/SketchWebsite/Setup/Constants.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/src/PageObjects/PAGE_Base.groovy" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SketchWebsite/PageObjects/UploadImage.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Source/src/PageObjects/UploadImage.groovy" afterPath="$PROJECT_DIR$/Source/src/PageObjects/PAGE_SketchPad.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SketchWebsite/PageObjects/PAGE_About.class" afterPath="$PROJECT_DIR$/out/production/SketchWebsite/PageObjects/PAGE_About.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SketchWebsite/PageObjects/PAGE_Home.class" afterPath="$PROJECT_DIR$/out/production/SketchWebsite/PageObjects/PAGE_Home.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SketchWebsite/Setup/DriverCreation.class" afterPath="$PROJECT_DIR$/out/production/SketchWebsite/Setup/DriverCreation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SketchWebsite/TestCaseImplementation/VerifySketchIoInAbout.class" afterPath="$PROJECT_DIR$/out/production/SketchWebsite/TestCaseImplementation/VerifySketchIoInAbout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/src/Setup/ConfigureCapabilities.groovy" afterPath="$PROJECT_DIR$/Source/src/Setup/ConfigureCapabilities.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/src/Setup/Constants.groovy" afterPath="$PROJECT_DIR$/Source/src/Setup/Constants.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/src/PageObjects/PAGE_About.groovy" afterPath="$PROJECT_DIR$/Source/src/PageObjects/PAGE_About.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/src/PageObjects/PAGE_Home.groovy" afterPath="$PROJECT_DIR$/Source/src/PageObjects/PAGE_Home.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/src/PageObjects/TextTab.groovy" afterPath="$PROJECT_DIR$/Source/src/PageObjects/TextTab.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/src/Setup/DriverCreation.groovy" afterPath="$PROJECT_DIR$/Source/src/Setup/DriverCreation.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchIoInAbout.groovy" afterPath="$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchIoInAbout.groovy" />
     </list>
     <ignored path="GitClone.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,43 +37,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConfigureCapabilities.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/src/Setup/ConfigureCapabilities.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#15#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DriverCreation.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/src/Setup/DriverCreation.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+            <state relative-caret-position="170">
+              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/src/Setup/Constants.groovy">
+      <file leaf-file-name="PAGE_Base.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_Base.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="31" column="90" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PAGE_About.groovy" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_About.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" column="5" selection-start-line="21" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="358">
+              <caret line="39" column="5" selection-start-line="19" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <element signature="e#21#43#0" expanded="true" />
               </folding>
@@ -81,11 +59,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PAGE_Home.groovy" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PAGE_About.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_About.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="46" />
+              <folding>
+                <element signature="e#21#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PAGE_Home.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_Home.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="782">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="e#21#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PAGE_SketchPad.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_SketchPad.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="33" column="88" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextTab.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/TextTab.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
               <folding>
                 <element signature="e#21#43#0" expanded="true" />
               </folding>
@@ -96,8 +108,8 @@
       <file leaf-file-name="VerifySketchIoInAbout.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchIoInAbout.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+            <state relative-caret-position="177">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding>
                 <element signature="e#32#61#0" expanded="true" />
               </folding>
@@ -105,21 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="VerifySketchpadPage.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchpadPage.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="227">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding>
                 <element signature="e#32#60#0" expanded="true" />
               </folding>
@@ -130,21 +132,11 @@
       <file leaf-file-name="VerifyWebcamPage.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifyWebcamPage.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
-              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#32#60#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UploadImage.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/UploadImage.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="19" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -169,16 +161,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Source/src/PageObjects/UploadImage.groovy" />
         <option value="$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchpadPage.java" />
-        <option value="$PROJECT_DIR$/Source/src/PageObjects/PAGE_Home.groovy" />
         <option value="$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchpadPage.groovy" />
         <option value="$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifyWebcamPage.groovy" />
-        <option value="$PROJECT_DIR$/Source/src/PageObjects/PAGE_About.groovy" />
         <option value="$PROJECT_DIR$/Source/src/Setup/ConfigureCapabilities.groovy" />
         <option value="$PROJECT_DIR$/Source/src/Setup/Constants.groovy" />
-        <option value="$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchIoInAbout.groovy" />
         <option value="$PROJECT_DIR$/Source/src/Setup/DriverCreation.groovy" />
+        <option value="$PROJECT_DIR$/Source/src/PageObjects/PAGE_Base.groovy" />
+        <option value="$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchIoInAbout.groovy" />
+        <option value="$PROJECT_DIR$/Source/src/PageObjects/PAGE_About.groovy" />
+        <option value="$PROJECT_DIR$/Source/src/PageObjects/UploadImage.groovy" />
+        <option value="$PROJECT_DIR$/Source/src/PageObjects/PAGE_SketchPad.groovy" />
+        <option value="$PROJECT_DIR$/Source/src/PageObjects/TextTab.groovy" />
+        <option value="$PROJECT_DIR$/Source/src/PageObjects/PAGE_Home.groovy" />
       </list>
     </option>
   </component>
@@ -213,6 +208,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,11 +294,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GitClone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GitClone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,20 +324,20 @@
       <recent name="C:\Users\Pallavi\IdeaProjects\GitClone\Source\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VerifySketchIoInAbout.verifySketchIoLink">
-    <configuration default="false" name="VerifySketchpadPage.verifySketchpadScreen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TextTab.textBox">
+    <configuration default="false" name="PAGE_About.clickSketchIo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="TestCaseImplementation.*" />
+          <option name="PATTERN" value="PageObjects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="SketchWebsite" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="TestCaseImplementation" />
-      <option name="MAIN_CLASS_NAME" value="TestCaseImplementation.VerifySketchpadPage" />
-      <option name="METHOD_NAME" value="verifySketchpadScreen" />
+      <option name="PACKAGE_NAME" value="PageObjects" />
+      <option name="MAIN_CLASS_NAME" value="PageObjects.PAGE_About" />
+      <option name="METHOD_NAME" value="clickSketchIo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -342,18 +351,18 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="VerifyWebcamPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PAGE_About" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="TestCaseImplementation.*" />
+          <option name="PATTERN" value="PageObjects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="SketchWebsite" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="TestCaseImplementation" />
-      <option name="MAIN_CLASS_NAME" value="TestCaseImplementation.VerifyWebcamPage" />
+      <option name="PACKAGE_NAME" value="PageObjects" />
+      <option name="MAIN_CLASS_NAME" value="PageObjects.PAGE_About" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -368,18 +377,18 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="VerifySketchIoInAbout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PAGE_Home" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="TestCaseImplementation.*" />
+          <option name="PATTERN" value="PageObjects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="SketchWebsite" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="TestCaseImplementation" />
-      <option name="MAIN_CLASS_NAME" value="TestCaseImplementation.VerifySketchIoInAbout" />
+      <option name="PACKAGE_NAME" value="PageObjects" />
+      <option name="MAIN_CLASS_NAME" value="PageObjects.PAGE_Home" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -394,19 +403,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="VerifyWebcamPage.verifyWebcamPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PAGE_SketchPad.uploadImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="TestCaseImplementation.*" />
+          <option name="PATTERN" value="PageObjects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="SketchWebsite" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="TestCaseImplementation" />
-      <option name="MAIN_CLASS_NAME" value="TestCaseImplementation.VerifyWebcamPage" />
-      <option name="METHOD_NAME" value="verifyWebcamPage" />
+      <option name="PACKAGE_NAME" value="PageObjects" />
+      <option name="MAIN_CLASS_NAME" value="PageObjects.PAGE_SketchPad" />
+      <option name="METHOD_NAME" value="uploadImage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -420,19 +429,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="VerifySketchIoInAbout.verifySketchIoLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TextTab.textBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="TestCaseImplementation.*" />
+          <option name="PATTERN" value="PageObjects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="SketchWebsite" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="TestCaseImplementation" />
-      <option name="MAIN_CLASS_NAME" value="TestCaseImplementation.VerifySketchIoInAbout" />
-      <option name="METHOD_NAME" value="verifySketchIoLink" />
+      <option name="PACKAGE_NAME" value="PageObjects" />
+      <option name="MAIN_CLASS_NAME" value="PageObjects.TextTab" />
+      <option name="METHOD_NAME" value="textBox" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -680,7 +689,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="UploadImage" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <configuration default="false" name="PAGE_SketchPad" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="PageObjects.*" />
@@ -691,7 +700,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="PageObjects" />
-      <option name="MAIN_CLASS_NAME" value="PageObjects.UploadImage" />
+      <option name="MAIN_CLASS_NAME" value="PageObjects.PAGE_SketchPad" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -707,20 +716,20 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.UploadImage" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.VerifySketchpadPage.verifySketchpadScreen" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VerifyWebcamPage" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VerifySketchIoInAbout" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.VerifyWebcamPage.verifyWebcamPage" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.VerifySketchIoInAbout.verifySketchIoLink" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.PAGE_SketchPad" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PAGE_About.clickSketchIo" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PAGE_About" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PAGE_Home" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PAGE_SketchPad.uploadImage" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TextTab.textBox" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VerifySketchIoInAbout.verifySketchIoLink" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VerifyWebcamPage.verifyWebcamPage" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VerifySketchIoInAbout" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VerifyWebcamPage" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VerifySketchpadPage.verifySketchpadScreen" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TextTab.textBox" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PAGE_SketchPad.uploadImage" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PAGE_Home" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PAGE_About" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PAGE_About.clickSketchIo" />
       </list>
     </recent_temporary>
   </component>
@@ -741,35 +750,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VerifySketchIoInAbout - 2016.10.05 at 04h 39m 56s.xml">
-      <configuration name="VerifySketchIoInAbout" configurationId="JUnit" />
+    <history-entry file="TextTab_textBox - 2016.10.08 at 07h 04m 33s.xml">
+      <configuration name="TextTab.textBox" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifySketchIoInAbout - 2016.10.05 at 04h 56m 34s.xml">
-      <configuration name="VerifySketchIoInAbout" configurationId="JUnit" />
+    <history-entry file="TextTab_textBox - 2016.10.08 at 07h 50m 39s.xml">
+      <configuration name="TextTab.textBox" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifySketchIoInAbout - 2016.10.05 at 06h 49m 00s.xml">
-      <configuration name="VerifySketchIoInAbout" configurationId="JUnit" />
+    <history-entry file="TextTab_textBox - 2016.10.08 at 08h 00m 36s.xml">
+      <configuration name="TextTab.textBox" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifySketchIoInAbout_verifySketchIoLink - 2016.10.05 at 07h 13m 35s.xml">
-      <configuration name="VerifySketchIoInAbout.verifySketchIoLink" configurationId="JUnit" />
+    <history-entry file="TextTab_textBox - 2016.10.08 at 08h 02m 07s.xml">
+      <configuration name="TextTab.textBox" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifySketchIoInAbout_verifySketchIoLink - 2016.10.05 at 07h 14m 54s.xml">
-      <configuration name="VerifySketchIoInAbout.verifySketchIoLink" configurationId="JUnit" />
+    <history-entry file="TextTab_textBox - 2016.10.08 at 08h 02m 52s.xml">
+      <configuration name="TextTab.textBox" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifySketchIoInAbout_verifySketchIoLink - 2016.10.05 at 07h 16m 27s.xml">
-      <configuration name="VerifySketchIoInAbout.verifySketchIoLink" configurationId="JUnit" />
+    <history-entry file="TextTab_textBox - 2016.10.08 at 08h 04m 02s.xml">
+      <configuration name="TextTab.textBox" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyWebcamPage_verifyWebcamPage - 2016.10.05 at 06h 59m 21s.xml">
-      <configuration name="VerifyWebcamPage.verifyWebcamPage" configurationId="JUnit" />
+    <history-entry file="TextTab_textBox - 2016.10.08 at 08h 06m 45s.xml">
+      <configuration name="TextTab.textBox" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyWebcamPage_verifyWebcamPage - 2016.10.05 at 07h 04m 52s.xml">
-      <configuration name="VerifyWebcamPage.verifyWebcamPage" configurationId="JUnit" />
+    <history-entry file="TextTab_textBox - 2016.10.11 at 01h 39m 25s.xml">
+      <configuration name="TextTab.textBox" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyWebcamPage_verifyWebcamPage - 2016.10.05 at 07h 05m 22s.xml">
-      <configuration name="VerifyWebcamPage.verifyWebcamPage" configurationId="JUnit" />
+    <history-entry file="TextTab_textBox - 2016.10.11 at 07h 24m 49s.xml">
+      <configuration name="TextTab.textBox" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VerifyWebcamPage_verifyWebcamPage - 2016.10.05 at 07h 06m 31s.xml">
-      <configuration name="VerifyWebcamPage.verifyWebcamPage" configurationId="JUnit" />
+    <history-entry file="TextTab_textBox - 2016.10.12 at 07h 44m 47s.xml">
+      <configuration name="TextTab.textBox" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -778,7 +787,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -789,6 +798,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -799,7 +809,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -824,10 +833,104 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Source/src/Setup/ConfigureCapabilities.groovy">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#62#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/Setup/DriverCreation.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_Base.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/Setup/Constants.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="90" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_About.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="e#21#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_Home.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="e#21#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchIoInAbout.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="e#32#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchpadPage.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#32#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifyWebcamPage.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#32#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/Setup/ConfigureCapabilities.groovy">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding>
-            <element signature="e#15#62#0" expanded="true" />
+            <element signature="e#15#62#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -886,7 +989,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/UploadImage.groovy">
+    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_SketchPad.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="19" selection-end-column="5" />
@@ -897,49 +1000,21 @@
     <entry file="file://$PROJECT_DIR$/Source/src/Setup/Test.groovy" />
     <entry file="file://$PROJECT_DIR$/Source/src/Setup/Test.groovy" />
     <entry file="file://$PROJECT_DIR$/Source/src/Setup/Test.groovy" />
-    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/TextTab.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/UploadImage.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchpadPage.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#32#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_Home.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#21#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/src/Setup/ConfigureCapabilities.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#15#62#0" expanded="true" />
+            <element signature="e#15#62#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/Setup/Constants.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="90" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -953,44 +1028,97 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifyWebcamPage.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        <state relative-caret-position="221">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#32#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/src/Setup/Constants.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="31" column="90" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/ScreenShot/verifySketchIoLink.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchIoInAbout.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="177">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding>
             <element signature="e#32#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/TestCaseImplementation/VerifySketchpadPage.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#32#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Git Repository/New folder/apache-groovy-sdk-2.4.7/groovy-2.4.7/lib/gpars-1.2.1.jar!/groovyx/gpars/dataflow/Select.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/TextTab.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+          <folding>
+            <element signature="e#21#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_SketchPad.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="33" column="88" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source/src/Setup/DriverCreation.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+        <state relative-caret-position="170">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_Base.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="39" column="5" selection-start-line="19" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#21#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_About.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="5" selection-start-line="21" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="85">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="e#21#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/src/PageObjects/PAGE_Home.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="e#21#43#0" expanded="true" />
           </folding>

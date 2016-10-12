@@ -12,29 +12,28 @@ import org.openqa.selenium.WebElement
 
 /**
  * Created by Pallavi on 9/28/2016.
+ * Page object for sketchpad page
  */
-class UploadImage {
-    WebDriver driver
-    @Before
-    public void driverCreation()
-    {
-        driver= DriverCreation.getChromeDriver()
-        driver.get(Constants.url)
-        driver.manage().window().maximize()
-        Thread.sleep(3000)
-    }
+class PAGE_SketchPad extends PAGE_Base {
     @Test
+   //How to navigate to sktchpad page from the home screeen. I dont want to put it in any method
+
+    //UploadImage method is to test the upload Image functionality in the Clipart tab of SketchPad Page.
     public void uploadImage()
     {
+        PAGE_Home homepage= new PAGE_Home();
+        homepage.gotoSketchpad(driver);
+        Thread.sleep(6000);
         //Select Clipart tab
         WebElement clipart = driver.findElement(By.xpath(Constants.clipart_cliparticon_xpath)).click()
         Thread.sleep(6000)
         //Upload image in clipart
         WebElement loadImage = driver.findElement(By.xpath(Constants.clipart_loadyourownimage_xpath))
         Thread.sleep(1000)
-        loadImage.sendKeys("C:/Users/Pallavi/Downloads/Tree.jpg")
+        //loadImage.sendKeys("\\Images\\Tree.jpg")
+        loadImage.sendKeys("C:\\Users\\Pallavi\\IdeaProjects\\GitClone\\Images\\Tree.jpg")
         Thread.sleep(2000)
-        //UploadImage image1=new UploadImage()
+        //PAGE_SketchPad image1=new PAGE_SketchPad()
         changeSettings("Opacity",40)
         changeSettings("Saturation",45)
         changeSettings("tint",50)
@@ -159,10 +158,22 @@ class UploadImage {
         }
     }
 
-    @After
-    public void exit()
-    {
-        driver.close()
-    }
+    //UploadImage method is to test the upload Image functionality in the Clipart tab of SketchPad Page.
+
+    public void textBox()
+   {
+       driver.findElement(By.xpath("/html/body/div[2]/div[1]/div[2]/span[5]")).click()
+       Thread.sleep(1000)
+       driver.findElement(By.xpath("/html/body/div[2]/div[3]/div/div[2]/div[2]/canvas[3]")).click()
+       WebElement textarea= driver.findElement(By.xpath("/html/body/div[2]/div[3]/div/div[2]/div[5]/div"))
+       Thread.sleep(2000)
+       textarea.sendKeys("Hello World")
+       Thread.sleep(3000)
+       //driver.findElement(By.className("sk-tool")).click()
+       driver.findElement(By.xpath("//*[@id=\"composite\"]/div/span[1]")).click()
+       Thread.sleep(1000)
+       driver.findElement(By.xpath("/html/body/div[2]/div[1]/div[1]/span[3]")).click()
+       Thread.sleep(3000)
+   }
 
 }
