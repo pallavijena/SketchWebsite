@@ -14,7 +14,7 @@ import org.openqa.selenium.WebElement
  * Created by Pallavi on 9/28/2016.
  * Page object for sketchpad page
  */
-class PAGE_SketchPad extends PAGE_Base {
+class PAGE_SketchPad extends PAGE_BASE {
     @Test
    //How to navigate to sktchpad page from the home screeen. I dont want to put it in any method
 
@@ -30,8 +30,8 @@ class PAGE_SketchPad extends PAGE_Base {
         //Upload image in clipart
         WebElement loadImage = driver.findElement(By.xpath(Constants.clipart_loadyourownimage_xpath))
         Thread.sleep(1000)
-        //loadImage.sendKeys("\\Images\\Tree.jpg")
-        loadImage.sendKeys("C:\\Users\\Pallavi\\IdeaProjects\\GitClone\\Images\\Tree.jpg")
+        File image=new File("Images/Tree.jpg");
+        loadImage.sendKeys(image.getAbsolutePath());
         Thread.sleep(2000)
         //PAGE_SketchPad image1=new PAGE_SketchPad()
         changeSettings("Opacity",40)
