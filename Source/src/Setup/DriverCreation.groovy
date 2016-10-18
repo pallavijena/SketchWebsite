@@ -19,25 +19,17 @@ class DriverCreation {
     }
     public static WebDriver getEdgeDriver()
     {
-<<<<<<< HEAD
-        System.setProperty("webdriver.edge.driver", ".\\Dependencies\\Microsoft Web Driver\\MicrosoftWebDriver.exe");
-=======
-       // System.setProperty("webdriver.edge.driver", "C:\\Program Files\\Microsoft Web Driver\\MicrosoftWebDriver.exe");
->>>>>>> eb839180ee71f1e955b81155351ff8d4e632d88e
+        System.setProperty("webdriver.edge.driver", "Dependencies\\Microsoft Web Driver\\MicrosoftWebDriver.exe");
         WebDriver driver=new EdgeDriver()
         return driver
     }
     public static WebDriver getFireFoxDriver()
     {
-<<<<<<< HEAD
         WebDriver driver = new FirefoxDriver()
-=======
         /*System.setProperty("marionette","C:\\Users\\Pallavi\\IdeaProjects\\Browser Setups\\Firefox_driver\\wires.exe")
         DesiredCapabilities capabilities = DesiredCapabilities.firefox()
         capabilities.setCapability("marionette", true)
         WebDriver driver = new FirefoxDriver(capabilities)*/
-        WebDriver driver =new FirefoxDriver();
->>>>>>> eb839180ee71f1e955b81155351ff8d4e632d88e
         return driver
     }
 }

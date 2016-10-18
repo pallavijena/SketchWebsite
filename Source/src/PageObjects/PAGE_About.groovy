@@ -10,7 +10,7 @@ import org.testng.annotations.Test
  * Created by Pallavi on 10/5/2016.
  */
 
-class PAGE_About extends PAGE_BASE {
+class PAGE_About extends PAGE_Home {
     WebDriver driver
 
     @Test

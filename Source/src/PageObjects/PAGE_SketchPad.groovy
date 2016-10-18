@@ -14,24 +14,23 @@ import org.openqa.selenium.WebElement
  * Created by Pallavi on 9/28/2016.
  * Page object for sketchpad page
  */
-class PAGE_SketchPad extends PAGE_Base {
+class PAGE_SketchPad extends PAGE_Home {
     @Test
-   //How to navigate to sktchpad page from the home screeen. I dont want to put it in any method
+   //How to navigate to sketchpad page from the home screeen. I dont want to put it in any method
 
     //UploadImage method is to test the upload Image functionality in the Clipart tab of SketchPad Page.
     public void uploadImage()
     {
         PAGE_Home homepage= new PAGE_Home();
-        homepage.gotoSketchpad(driver);
+        homepage.gotoSketchpad();
         Thread.sleep(6000);
         //Select Clipart tab
-        WebElement clipart = driver.findElement(By.xpath(Constants.clipart_cliparticon_xpath)).click()
+        WebElement clipart = driver.findElement(By.xpath(Constants.sketchpad_cliparticon_xpath)).click()
         Thread.sleep(6000)
         //Upload image in clipart
         WebElement loadImage = driver.findElement(By.xpath(Constants.clipart_loadyourownimage_xpath))
-        Thread.sleep(1000)
-        //loadImage.sendKeys("\\Images\\Tree.jpg")
-        loadImage.sendKeys("C:\\Users\\Pallavi\\IdeaProjects\\GitClone\\Images\\Tree.jpg")
+        File image=new File("\\Images\\Tree.jpg")
+        loadImage.sendKeys(image.getAbsolutePath())
         Thread.sleep(2000)
         //PAGE_SketchPad image1=new PAGE_SketchPad()
         changeSettings("Opacity",40)
@@ -158,22 +157,38 @@ class PAGE_SketchPad extends PAGE_Base {
         }
     }
 
-    //UploadImage method is to test the upload Image functionality in the Clipart tab of SketchPad Page.
+    //getTextBox  method is to test the text box functionality in the text tab of SketchPad Page.
 
-    public void textBox()
-   {
-       driver.findElement(By.xpath("/html/body/div[2]/div[1]/div[2]/span[5]")).click()
-       Thread.sleep(1000)
-       driver.findElement(By.xpath("/html/body/div[2]/div[3]/div/div[2]/div[2]/canvas[3]")).click()
-       WebElement textarea= driver.findElement(By.xpath("/html/body/div[2]/div[3]/div/div[2]/div[5]/div"))
-       Thread.sleep(2000)
-       textarea.sendKeys("Hello World")
-       Thread.sleep(3000)
-       //driver.findElement(By.className("sk-tool")).click()
-       driver.findElement(By.xpath("//*[@id=\"composite\"]/div/span[1]")).click()
-       Thread.sleep(1000)
-       driver.findElement(By.xpath("/html/body/div[2]/div[1]/div[1]/span[3]")).click()
-       Thread.sleep(3000)
-   }
+    public void getTextBox()
+    {
+        driver.findElement(By.xpath(Constants.sketchpad_texticon_xpath)).click()
+        Thread.sleep(1000)
+        driver.findElement(By.xpath(Constants.sketchpad_canvas_xpath)).click()
+        WebElement textarea= driver.findElement(By.xpath(Constants.sketchpad_texttab_textarea_xpath))
+        Thread.sleep(2000)
+        textarea.sendKeys("Hello World")
+        Thread.sleep(2000)
 
+        driver.findElement(By.xpath(Constants.sketchpad_texttab_fillslider_xpath)).click()
+        Thread.sleep(1000)
+        driver.findElement(By.className(Constants.sketchpad_texttab_outline_classname)).click()
+    }
+
+    // changeBlendSettings method can be used to change the blend value for clipart and textbox
+
+    public void changeBlendSettings(String blendval)
+    {
+        driver.findElement(By.xpath(Constants.sketchpad_texttab_blend_xpath)).click()
+        Thread.sleep(2000)
+        List <WebElement> blendType = driver.findElements(By.xpath("//*/div/ul/li"))
+        for(WebElement i:blendType)
+        {
+            if (i.getText().contains(blendval))
+            {
+                i.click()
+                break
+            }
+        }
+        Thread.sleep(1000)
+    }
 }

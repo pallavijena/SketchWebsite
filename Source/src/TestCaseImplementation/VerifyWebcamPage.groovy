@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit
  * Created by Pallavi on 10/5/2016.
  * This test is to verify if user is able to navigate to the webcam page and successfully return back to home screen
  */
-class VerifyWebcamPage {
+class VerifyWebcamPage extends PAGE_Home{
     WebDriver driver
     @Before
     public void browserSetup()

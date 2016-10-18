@@ -36,7 +36,11 @@ class Constants {
 
 
     // Tab Names
-    public static String clipart_cliparticon_xpath = "/html/body/div[2]/div[1]/div[2]/span[4]"
+    public static String sketchpad_cliparticon_xpath = "/html/body/div[2]/div[1]/div[2]/span[4]"
+    public static String sketchpad_texticon_xpath = "/html/body/div[2]/div[1]/div[2]/span[5]"
+    public static String sketchpad_canvas_xpath = "/html/body/div[2]/div[3]/div/div[2]/div[2]/canvas[3]"
+
+
     // Clipart Tab
     public static String clipart_loadyourownimage_xpath="//*[@id=\"sk-configure\"]/div[2]/span/input"
     //Image Settings
@@ -61,5 +65,29 @@ class Constants {
 
     public static String home_export_xpath="html/body/div[2]/div[1]/div[1]/span[3]"
 
+    //TextTab Variables in SketchPad Page
+    public static String sketchpad_texttab_fillslider_xpath="//*[@id=\"sk-configure\"]/div[2]/label[3]/div/div/div"
+    public static String sketchpad_texttab_outline_classname="stroke-indicator"
+    public static String sketchpad_texttab_textarea_xpath = "/html/body/div[2]/div[3]/div/div[2]/div[5]/div"
+    public static String sketchpad_texttab_blend_xpath = ".//*[@id='composite']/div/span[2]"
+    public static String sketchpad_texttab_fill_classname ="fill-indicator"
+    public static String sketchpad_texttab_fillColor_xpath ="//*[@id=\"sk-palette\"]/div[1]/ol/span[1]"
+    public static String sketchpad_texttab_fillColorName_xpath ="//*[@id=\"color_b868a18\"]/canvas"
+    public static String sketchpad_texttab_fillLinear_xpath ="//*[@id=\"sk-palette\"]/div[1]/ol/span[2]"
+    public static String sketchpad_texttab_fillLinearName_xpath ="//*[@id=\"gradient_8ed42c34\"]/canvas"
+    public static String sketchpad_texttab_fillRadial_xpath ="//*[@id=\"sk-palette\"]/div[1]/ol/span[3]"
+    public static String sketchpad_texttab_fillRadialName_xpath ="//*[@id=\"gradient_31ec35ef\"]/canvas"
+    public static String sketchpad_texttab_fillPattern_xpath ="//*[@id=\"sk-palette\"]/div[1]/ol/span[4]"
+    public static String sketchpad_texttab_fillPatternName_xpath="//*[@id=\"pattern_a426c15e\"]/canvas"
+    public static String sketchpad_texttab_fillGoBack_xpath="//*[@id=\"sk-configure\"]/div[1]/span"
+    public static String sketchpad_texttab_font_xpath="//*[@id=\"sk-configure\"]/div[2]/label[1]/div/div/span[1]"
+    public static String sketchpad_texttab_fontLeft_xpath=".//*[@id='sk-configure']/div[2]/div[2]/span[1]"
+    public static String sketchpad_texttab_fontCenter_xpath=".//*[@id='sk-configure']/div[2]/div[2]/span[2]"
+    public static String sketchpad_texttab_fontRight_xpath=".//*[@id='sk-configure']/div[2]/div[2]/span[3]"
+    public static String sketchpad_texttab_fontJustify_xpath=".//*[@id='sk-configure']/div[2]/div[2]/span[4]"
+    public static String sketchpad_texttab_fontBold_xpath=".//*[@id='sk-configure']/div[2]/div[3]/span[1]"
+    public static String sketchpad_texttab_fontItalics_xpath=".//*[@id='sk-configure']/div[2]/div[3]/span[2]"
+    public static String sketchpad_texttab_fontUnderline_xpath=".//*[@id='sk-configure']/div[2]/div[3]/span[3]"
+    public static String sketchpad_texttab_fontStrike_xpath=".//*[@id='sk-configure']/div[2]/div[3]/span[4]"
 
 }

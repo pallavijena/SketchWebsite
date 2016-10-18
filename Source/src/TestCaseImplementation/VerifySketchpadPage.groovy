@@ -15,7 +15,7 @@ import org.openqa.selenium.remote.DriverCommand;
  * Created by Pallavi on 10/3/2016.
  * This test case is to verify if user is successfully able to navigate to sketchpad page and come back to home screen
  */
-public class VerifySketchpadPage {
+public class VerifySketchpadPage extends PAGE_Home{
     WebDriver driver
     @Before
     public void browserSetup()
