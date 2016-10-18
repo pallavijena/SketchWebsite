@@ -131,7 +131,7 @@ class TextTab {
                break
            }
        }
-
+        swi
     }
     @After
     public void browserClose()
